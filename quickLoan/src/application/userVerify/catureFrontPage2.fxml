@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.userVerify.CaptureFront2Page">
+   <children>
+      <VBox spacing="10" AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.topAnchor="10">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="480" fitWidth="640" preserveRatio="true" />
+            <HBox spacing="10">
+               <children>
+                  <Button fx:id="button_start" onAction="#startCamera" text="Start Camera" />
+                  <Button fx:id="button_capture" onAction="#capture" text="Capture" />
+                  <Button fx:id="button_retake" onAction="#retake" text="Retake" />
+                  <Button fx:id="button_accept" onAction="#accept" text="Accept" />
+                  <Button fx:id="button_continue" onAction="#continue_page6" text="Continue" />
+                  <Button fx:id="button_close" onAction="#close" text="Close" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

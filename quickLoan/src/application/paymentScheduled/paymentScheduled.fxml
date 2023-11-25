@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="paneMain" prefHeight="368.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.paymentScheduled.PaymentScheduledController">
+   <children>
+      <AnchorPane layoutX="21.0" layoutY="-2.0" prefHeight="369.0" prefWidth="422.0">
+         <children>
+            <HBox layoutX="-22.0" prefHeight="53.0" prefWidth="444.0" style="-fx-background-color: #e1e1e1;" styleClass="border_topleft_right1" stylesheets="@../application.css">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="145.0" text="Loan Type" textFill="#6e6e6e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="12.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="48.0" prefWidth="138.0" text="Start Date" textFill="#6e6e6e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="47.0" prefWidth="171.0" text="Repayment Scheduled" textFill="#6e6e6e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane layoutX="-21.0" layoutY="49.0" prefHeight="320.0" prefWidth="443.0">
+               <children>
+                  <ScrollPane prefHeight="320.0" prefWidth="443.0">
+                     <content>
+                        <VBox fx:id="layout" prefHeight="317.0" prefWidth="440.0">
+                           <children>
+                              <HBox prefHeight="55.0" prefWidth="419.0">
+                                 <children>
+                                    <Label prefHeight="55.0" prefWidth="155.0" text="Home">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="11.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label prefHeight="55.0" prefWidth="127.0" text="22-10-2002">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0">
+                                       <center>
+                                          <Button mnemonicParsing="false" text="Viewing" BorderPane.alignment="CENTER" />
+                                       </center>
+                                    </BorderPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="paneScheduled" layoutX="461.0" layoutY="-2.0" prefHeight="369.0" prefWidth="440.0" style="-fx-background-color: #BAE2D9;" styleClass="line_div" stylesheets="@../application.css">
+         <children>
+            <VBox layoutX="28.0" layoutY="30.0" prefHeight="166.0" prefWidth="202.0">
+               <children>
+                  <Label text="Nice to">
+                     <font>
+                        <Font name="Gill Sans MT Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label text="meet you,">
+                     <font>
+                        <Font name="Gill Sans MT Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label text="we will">
+                     <font>
+                        <Font name="Gill Sans MT Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label text="chat soon.">
+                     <font>
+                        <Font name="Gill Sans MT Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <ImageView fitHeight="236.0" fitWidth="236.0" layoutX="185.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/Screenshot_2023-11-13_133250-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="28.0" layoutY="300.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="142.0" style="-fx-background-color: #000;" text="Take me back home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

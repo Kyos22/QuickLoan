@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneCenter" prefHeight="435.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.dashboard.TopUpHistoryController">
+   <children>
+      <AnchorPane layoutX="23.0" prefHeight="435.0" prefWidth="900.0" styleClass="line_div" stylesheets="@../application.css">
+         <children>
+            <HBox layoutX="26.0" layoutY="109.0" prefHeight="262.0" prefWidth="849.0" style="-fx-background-color: transparent;" stylesheets="@../application.css">
+               <children>
+                  <ScrollPane prefHeight="262.0" prefWidth="850.0" stylesheets="@../application.css">
+                     <content>
+                        <VBox fx:id="TopUpLayout" prefHeight="239.0" prefWidth="845.0">
+                           <children>
+                              <HBox fx:id="Layout1" prefHeight="46.0" prefWidth="830.0">
+                                 <children>
+                                    <Label fx:id="created" prefHeight="46.0" prefWidth="206.0" text="19/10/2023">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="18.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="amount" prefHeight="46.0" prefWidth="208.0" text="\$1886.00">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="3.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="orignalBalance" prefHeight="46.0" prefWidth="208.0" text="\$1886.00">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="9.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="currentBalance" prefHeight="46.0" prefWidth="208.0" text="\$1886.00">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="12.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="26.0" layoutY="70.0" prefHeight="39.0" prefWidth="849.0" style="-fx-background-color: #C8C8C8;" styleClass="border_topleft_right" stylesheets="@../application.css">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="232.0" text="Date" textFill="#8a8a8a">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="232.0" text="Amount" textFill="#8a8a8a">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="232.0" text="Original Balance" textFill="#8a8a8a">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="232.0" text="Current Balance" textFill="#8a8a8a">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label layoutX="361.0" layoutY="14.0" text="Top Up History">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

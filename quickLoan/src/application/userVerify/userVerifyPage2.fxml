@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="508.0" style="-fx-background-color: #1E2329;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.userVerify.UserVerify2Controller">
+   <children>
+      <Label graphicTextGap="6.0" layoutX="57.0" layoutY="43.0" prefHeight="32.0" prefWidth="395.0" text="Personal Information" textFill="#eaecef">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="75.0" prefHeight="21.0" prefWidth="406.0" text="Please provide the following information as shown " textFill="#9da3ac">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_close" layoutX="443.0" layoutY="10.0" mnemonicParsing="false" onAction="#close" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fx:id="imageViewClose" fitHeight="41.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/x-regular-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="button_back" layoutX="6.0" layoutY="7.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="35.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fx:id="imageViewBack" fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/arrow-back-regular-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="59.0" layoutY="121.0" prefHeight="20.0" prefWidth="81.0" text="Full Name" textFill="#eaecef">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input_fullname" editable="false" layoutX="60.0" layoutY="145.0" prefHeight="36.0" prefWidth="392.0" styleClass="cbb" stylesheets="@../application.css" />
+      <Label layoutX="61.0" layoutY="199.0" prefHeight="20.0" prefWidth="122.0" text="ID Card Number" textFill="#eaecef">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input_id" layoutX="62.0" layoutY="223.0" prefHeight="36.0" prefWidth="391.0" promptText="Your Identity Card Number" styleClass="cbb" stylesheets="@../application.css" />
+      <Label layoutX="62.0" layoutY="277.0" prefHeight="20.0" prefWidth="99.0" text="Phone Number" textFill="#eaecef">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input_number" layoutX="63.0" layoutY="301.0" prefHeight="36.0" prefWidth="389.0" promptText="XXX-XXX-XXX" styleClass="cbb" stylesheets="@../application.css" />
+      <Label layoutX="64.0" layoutY="359.0" prefHeight="20.0" prefWidth="82.0" text="Date of birth" textFill="#eaecef">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="64.0" layoutY="368.0" prefHeight="64.0" prefWidth="388.0" spacing="5.0">
+         <children>
+            <TextField fx:id="input_dd" prefHeight="36.0" prefWidth="141.0" promptText="DD" styleClass="cbb" stylesheets="@../application.css" />
+            <TextField fx:id="input_MM" prefHeight="36.0" prefWidth="141.0" promptText="MM" styleClass="cbb" stylesheets="@../application.css" />
+            <TextField fx:id="input_YYYY" prefHeight="36.0" prefWidth="141.0" promptText="YYYY" styleClass="cbb" stylesheets="@../application.css" />
+         </children>
+      </HBox>
+      <Button fx:id="button_continue" layoutX="264.0" layoutY="510.0" mnemonicParsing="false" onAction="#continue1" prefHeight="42.0" prefWidth="190.0" styleClass="button_select_verify" stylesheets="@../application.css" text="Continue">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="58.0" layoutY="93.0" prefHeight="22.0" prefWidth="392.0" text="on your passport" textFill="#9da3ac">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="429.0" prefHeight="30.0" prefWidth="390.0" textFill="#c41818">
+         <padding>
+            <Insets left="14.0" />
+         </padding>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

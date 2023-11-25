@@ -1,0 +1,418 @@
+ @import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@300;400;500&display=swap');
+
+
+.button-rounded-left {
+    -fx-border-radius: 15px 0 0 15px; 
+    -fx-background-radius: 15px 0 0 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 30, 0, 0, 3) 
+                dropshadow(gaussian, rgba(0, 0, 0, 0.5), 30, 0, 3, 0);
+}
+.button-rounded-right {
+    -fx-border-radius: 0 15px 15px 0; 
+    -fx-background-radius: 0 15px 15px 0;
+     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 30, 0, 0, 3) 
+                dropshadow(gaussian, rgba(0, 0, 0, 0.5), 30, 0, 3, 0) 
+                dropshadow(gaussian, rgba(0, 0, 0, 0.5), 30, 3, 0, 0);
+}
+.label1{
+	-fx-font-family: 'Anek Kannada', sans-serif;
+}
+.inputusername_regester{
+	-fx-border-color: transparent transparent white transparent;
+	-fx-background-color: transparent;
+	-fx-border-width: 0 0 1 0;
+	-fx-padding: 0 0 4 0;
+	-fx-text-fill: #fff;
+}
+.inputusername_regester:focused{
+	-fx-border-color: #64D7C4;
+}
+.termofservice{
+	-fx-underline: true;
+	-fx-text-fill: #BDA0E2;
+}
+.check-box {
+    
+    -fx-background-color: transparent;
+}
+.check-box:selected {
+    -fx-border-color: #BDA0E2; 
+    -fx-background-color: #BDA0E2;
+}
+/*khi signup */
+.button-signup {
+	-fx-background-color: #BDA0E2;
+	-fx-border-radius: 15 15 15 15; 
+    -fx-background-radius: 15 15 15 15; 
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 30, 0, 0, 3);
+}
+.button-signup:hover {
+	-fx-background-color: #BDA0E2;
+	
+}
+.custom-textfield {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 7px;
+    -fx-padding: 5px 10px;
+    -fx-text-fill: white;
+}
+
+.custom-textfield:focused {
+    -fx-border-color: #64D7C4; /* Màu sắc khi TextField được focus. Bạn có thể thay đổi nếu muốn. */
+}
+
+.label-floating {
+    -fx-fill: white;
+    -fx-translate-y: 20;
+    -fx-background-color: #000; /* Màu nền của scene, để label "Name" không hiển thị phía sau textfield */
+}
+.buttonLogin{
+	
+	-fx-effect: dropshadow(gaussian, rgba(189,160,226, 0.4), 30, 0, 0, 3);
+}
+
+/* thụt lùi text field */
+.custom_field{
+	-fx-padding: 0 0 0 25px;
+}
+/*nét đứt */
+.dashedLine {
+    -fx-stroke-dash-array: 10 5;  /* nét 10 pixel, khoảng trắng 5 pixel */
+}
+.button-applyNewsLoan {
+	-fx-background-color: #BBA2E5;
+	-fx-border-radius: 15 15 15 15; 
+    -fx-background-radius: 15 15 15 15; 
+}
+/*nút thành hình tròn */
+.myButton {  
+    -fx-background-radius: 50%;
+}
+/*bo góc pane */
+.roundedPane {
+    
+    -fx-background-radius: 20; /* Điều chỉnh giá trị này để thay đổi độ bo tròn của góc */
+    -fx-padding: 10px; /* Điều chỉnh padding nếu cần */
+}
+/*màu viền và viền của biểu đồ giữa */
+.line_div {
+    -fx-border-color: #dddddd; /* Thay #YourBorderColor bằng mã màu bạn muốn */
+    -fx-border-width: 2px; /* Điều chỉnh chiều rộng của đường viền nếu cần */
+    -fx-border-radius: 15px;  
+    -fx-background-radius: 15px;
+}
+.button_continue_categor{
+	-fx-border-color: #dddddd; /* Thay #YourBorderColor bằng mã màu bạn muốn */
+    -fx-border-width: 1.5px; /* Điều chỉnh chiều rộng của đường viền nếu cần */
+	-fx-background-color: transparent;
+	-fx-border-radius: 10px;  
+    -fx-background-radius: 10px;
+}
+.button_continue_categor:hover{
+	-fx-border-color: #dddddd; /* Thay #YourBorderColor bằng mã màu bạn muốn */
+    -fx-border-width: 1.5px; /* Điều chỉnh chiều rộng của đường viền nếu cần */
+	-fx-background-color: #5FCDBB;
+	-fx-border-radius: 10px;  
+    -fx-background-radius: 10px;
+    -fx-text-fill: #fff;
+}
+.div_each_category{
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 30, 0, 0, 3);
+	-fx-border-radius: 15px;  
+    -fx-background-radius: 15px;
+}
+.div_each_category:hover{
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 30, 0, 0, 3);
+	-fx-border-radius: 15px;  
+    -fx-background-radius: 15px;
+    -fx-border-color: #5FCDBB; /* Thay #YourBorderColor bằng mã màu bạn muốn */
+    
+}
+
+
+.button_select_category{
+	-fx-background-color: transparent;
+	-fx-border-color: #DADADA; /* Thay #YourBorderColor bằng mã màu bạn muốn */
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 15px;
+	-fx-text-fill: #ddddd;
+}
+.button_select_category:hover{
+	-fx-background-color: #5FCDBB;
+	-fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+	-fx-text-fill: #fff;
+	-fx-font-weight: bold;
+
+	
+}
+.button_select_type_loan{
+	-fx-background-color:#EDF1FA ;
+	-fx-border-color: #EDF1FA; /* Thay #YourBorderColor bằng mã màu bạn muốn */    
+    -fx-border-radius: 30px;
+     -fx-background-radius: 30px;
+	-fx-text-fill: #AEB1C4;
+-fx-effect: dropshadow(gaussian, rgba(189, 160, 226, 0.7), 30, 0, 0, 3);
+    -fx-border-color: #BDA0E2; /* Thay #YourBorderColor bằng mã màu bạn muốn */
+    -fx-border-width: 1.5px;
+
+}
+.button_select_type_loan:hover{
+	-fx-background-color:#BDA0E2;
+	-fx-border-color: #BDA0E2; /* Thay #YourBorderColor bằng mã màu bạn muốn */    
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+	-fx-text-fill: #fff;
+	
+}
+
+
+.slider .thumb {
+    -fx-background-color: #BDA0E2; 
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-border-color: #BDA0E2;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.7), 5, 0.0, 0, 2);
+}
+.slider .track{
+	-fx-background-color: #5FCDBB;
+	
+}
+.slider .filled{
+	-fx-background-color: #000;
+}
+
+.button_select_verify{
+	-fx-background-color: #5FCDBB ;
+	-fx-text-fill: #ddddd;
+	-fx-font-weight: bold;
+	-fx-effect: dropshadow(gaussian, rgba(189,160,226, 0.4), 30, 0, 0, 3);
+}
+.button_select_verify:hover{
+	
+	-fx-text-fill: #fff;
+	-fx-font-weight: bold;	
+}
+.cbb{
+	-fx-background-color: transparent;
+	-fx-border-color: #9da3ac;
+	-fx-border-width: 1px;
+	-fx-border-radius: 5px;
+	-fx-background-radius: 5px;
+	-fx-text-fill: #fff;
+}
+.list-cell {
+    -fx-padding: 10px;
+    -fx-background-color:  #1E2329;
+    -fx-text-fill: white;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: green;
+}
+.select_document{
+	-fx-background-color: #2B3139;
+	-fx-border-color: #fff;
+	-fx-border-radius: 5px;
+	-fx-border-width: 0.2px;
+	-fx-background-radius: 5px;
+	-fx-text-fill: #fff;
+}
+.button-disabled {
+    -fx-background-color: transparent;
+    -fx-text-fill: #fff; 
+    -fx-border-color: #fff;
+    -fx-border-width: 0.5px;
+    
+}
+
+.button-enabled {
+    -fx-background-color: #5FCDBB; /* Màu nền cho trạng thái hoạt động */
+    -fx-text-fill: #ddddd;
+	-fx-font-weight: bold;
+	-fx-effect: dropshadow(gaussian, rgba(189,160,226, 0.4), 30, 0, 0, 3);
+}
+.button-enabled:hover {
+    -fx-background-color: #5FCDBB; /* Màu nền cho trạng thái hoạt động */
+    -fx-text-fill: #fff;
+	-fx-font-weight: bold;
+	-fx-effect: dropshadow(gaussian, rgba(189,160,226, 0.4), 30, 0, 0, 3);
+}
+/* Style mặc định cho RadioButton, không có viền */
+.radio-button {
+    -fx-border-color: transparent; /* Hoặc màu phù hợp với background của bạn */
+    -fx-border-width: 0;
+    -fx-border-style: none;
+}
+
+/* Style cho RadioButton khi được chọn */
+.radio-button-selected {
+    -fx-border-color: yellow;
+    -fx-border-width: 0.5px;
+    -fx-border-style: solid;
+    -fx-border-insets: -3;
+    -fx-border-radius: 2;
+}
+.div-uploadFile{
+	-fx-stroke-dash-array: 10 5;  /* nét 10 pixel, khoảng trắng 5 pixel */
+	-fx-border-color: #dddddd; /* Thay #YourBorderColor bằng mã màu bạn muốn */
+    -fx-border-width: 0.5px; /* Điều chỉnh chiều rộng của đường viền nếu cần */
+    -fx-border-radius: 15px;  
+    -fx-background-radius: 15px;
+}
+.inputusername_regester1{
+	-fx-border-color: #EEEEEE;
+	-fx-background-color: #EEEEEE;
+	-fx-background-radius: 30px;
+	-fx-border-radius: 30px;
+	-fx-border-color: #dddddd;
+	-fx-text-fill: #000;
+}
+.button_select_payment{
+	-fx-background-color: #5FCDBB ;
+	-fx-text-fill: #ddddd;
+	-fx-font-weight: bold;
+	-fx-effect: dropshadow(gaussian, rgba(189,160,226, 0.4), 30, 0, 0, 3);
+	-fx-border-radius:20px;
+	-fx-background-radius: 20px; 
+}
+.button_select_payment:hover{
+	
+	-fx-text-fill: #fff;
+	-fx-font-weight: bold;	
+}
+.button_select_payment1{
+	-fx-background-color: transparent;
+	-fx-text-fill: #5FCDBB;
+	-fx-font-weight: bold;
+	-fx-border-color: #5FCDBB;
+	-fx-border-radius:20px;
+	-fx-background-radius: 20px; 
+}
+.button_select_payment1:hover{
+	
+	-fx-text-fill: #000;
+	-fx-font-weight: bold;	
+}
+.divVCBCJKSDCNDKJ{
+	-fx-background-color: #dddddd;
+	-fx-background-radius: 20px;
+	-fx-border-radius: 20px;
+}
+.border_topleft_right{
+	 -fx-background-radius: 10 10 0 0; /* Xác định bo góc cho top-left, top-right, bottom-right và bottom-left */
+    -fx-border-radius: 10 10 0 0; /* Xác định bo góc cho top-left, top-right, bottom-right và bottom-left (nếu có border) */
+}
+.underline_row{
+	-fx-border-color: transparent transparent #BFBFBF transparent;
+}
+.button_RequestLoan{
+	-fx-background-color: transparent;
+	-fx-border-color: #949494;
+	-fx-border-width: 1px;
+	-fx-background-radius: 5px;
+	-fx-border-radius: 5px;
+	-fx-text-fill: #949494;
+}
+.button_RequestLoan:hover{
+	-fx-background-color: #5FCDBB;
+	-fx-border-color: #53A6A3;
+	-fx-border-width: 1px;
+	-fx-background-radius: 5px;
+	-fx-border-radius: 5px;
+	-fx-text-fill: #fff;
+}
+.div_totalAmountIs{
+	-fx-border-radius: 7px;
+	-fx-background-color:  #30365B;
+	-fx-background-radius: 7px;
+	 -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 30, 0, 0, 3) 
+                dropshadow(gaussian, rgba(0, 0, 0, 0.5), 30, 0, 3, 0) 
+                dropshadow(gaussian, rgba(0, 0, 0, 0.5), 30, 3, 0, 0);
+}
+.input_amount{
+	-fx-background-color: #161C36;
+	-fx-text-fill: #fff;
+	-fx-font-weight: bold;
+}
+.div_calculator_loan{
+	-fx-border-radius: 7px;
+	-fx-background-color:  #30365B;
+	-fx-background-radius: 7px;
+	 
+}
+.div_confirm_loan{
+	-fx-border-radius: 9px;
+	-fx-background-color:   #222947;
+	-fx-background-radius: 9px;
+	-fx-border-color: #dddddd;
+}
+.border-box{
+	-fx-border-color: #D3D3D3;
+}
+.border-box-detailPending{
+	-fx-background-color: transparent;
+	-fx-border-color: #dddddd;
+	-fx-border-width: 0.8px;
+	-fx-background-radius: 7px;
+	-fx-border-radius: 7px;
+	-fx-text-fill: #898989;
+}
+.div_detail_pending{
+	-fx-background-color: #fff;
+	-fx-background-radius: 20px;
+	-fx-border-radius: 20px;
+	-fx-border-color: #dddddd;
+	
+}
+.border_topleft_right1{
+	-fx-background-color: #e1e1e1;
+	 -fx-background-radius: 15 15 0 0; /* Xác định bo góc cho top-left, top-right, bottom-right và bottom-left */
+    -fx-border-radius: 15 15 0 0; /* Xác định bo góc cho top-left, top-right, bottom-right và bottom-left (nếu có border) */
+}
+.div_repayment{
+	-fx-background-color: #fff;
+	-fx-background-radius: 15px;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 30, 0, 0, 3) 
+                dropshadow(gaussian, rgba(0, 0, 0, 0.5), 30, 0, 3, 0) 
+                dropshadow(gaussian, rgba(0, 0, 0, 0.5), 30, 3, 0, 0);
+
+}
+.button_repayment{
+	-fx-background-color: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+	-fx-background-radius: 0 0 15 15;
+	
+}
+.button_repayment:hover{
+	-fx-background-color: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+	-fx-background-radius: 0 0 15 15;
+	-fx-text-fill: #fff
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

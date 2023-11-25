@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="46.0" prefWidth="830.0" styleClass="underline_row" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.dashboard.RowTopUpHistoryController">
+   <children>
+      <Label fx:id="created" prefHeight="46.0" prefWidth="206.0" text="19/10/2023">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <padding>
+            <Insets left="18.0" />
+         </padding>
+      </Label>
+      <Label fx:id="amount" prefHeight="46.0" prefWidth="208.0" text="\$1886.00">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <padding>
+            <Insets left="3.0" />
+         </padding>
+      </Label>
+      <Label fx:id="originalBalance" prefHeight="46.0" prefWidth="208.0" text="\$1886.00">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <padding>
+            <Insets left="9.0" />
+         </padding>
+      </Label>
+      <Label fx:id="currentBalance" prefHeight="46.0" prefWidth="208.0" text="\$1886.00">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <padding>
+            <Insets left="12.0" />
+         </padding>
+      </Label>
+   </children>
+</HBox>

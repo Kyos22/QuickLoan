@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="700.0" style="-fx-background-color: #33455B;" styleClass="pane" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.login_register.BackgroundController">
+   <children>
+      <Pane fx:id="pane1" prefHeight="487.0" prefWidth="350.0" style="-fx-background-color: #33455B;" />
+      <Pane fx:id="pane2" layoutX="350.0" prefHeight="487.0" prefWidth="350.0" style="-fx-background-color: #33455B;">
+         <children>
+            <Button fx:id="button_SignIn" graphicTextGap="0.0" layoutX="238.0" layoutY="16.0" mnemonicParsing="false" onAction="#buttonSignIn" style="-fx-background-color: #4C5C72;" styleClass="button-rounded-left" stylesheets="@../application.css" text="Sign In" textFill="#c4b8b8">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="7.0" right="10.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="button_SignUp" layoutX="286.0" layoutY="16.0" mnemonicParsing="false" onAction="#buttonSignUp" style="-fx-background-color: #4C5C72;" styleClass="button-rounded-right" text="Sign Up" textFill="#c1c1c1">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="7.0" right="10.0" top="5.0" />
+               </padding>
+            </Button>
+            <ImageView fx:id="imageView_Logo" fitHeight="47.0" fitWidth="156.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/logoQuickLoan.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="centerPaneSignup_in" layoutY="73.0" prefHeight="414.0" prefWidth="350.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

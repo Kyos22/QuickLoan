@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="43.0" prefWidth="273.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.paidMoney.RowPaidMoneyTransactionController">
+   <children>
+      <ImageView fx:id="imageView_imageViewType" fitHeight="44.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/houseIcon.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="115.0">
+         <children>
+            <Label fx:id="label_type" text="House Loan">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_repayment" text="3rd payment" textFill="#8a8a8a">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER_RIGHT" prefHeight="43.0" prefWidth="115.0">
+         <children>
+            <Label fx:id="label_amountRepayment" text="-$100,09">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_StartDate" text="Sep 9, 2023" textFill="#8a8a8a">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>

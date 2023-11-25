@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="394.0" styleClass="div_confirm_loan" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.requestLoanHome.RequestLoanHome1Controller">
+   <children>
+      <Button fx:id="button_close" layoutX="340.0" layoutY="1.0" mnemonicParsing="false" onAction="#close" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fx:id="imageView_close" fitHeight="38.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/x-regular-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="button_confirm" layoutX="37.0" layoutY="302.0" mnemonicParsing="false" onAction="#confirm" prefHeight="39.0" prefWidth="316.0" styleClass="button_select_verify" stylesheets="@../application.css" text="Confirm">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="38.0" layoutY="39.0" prefHeight="246.0" prefWidth="315.0" styleClass="div_totalAmountIs" stylesheets="@../application.css">
+         <children>
+            <Label alignment="CENTER" layoutY="22.0" prefHeight="30.0" prefWidth="315.0" text="Confirm Your Loan Request" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_amount" alignment="CENTER" layoutX="3.0" layoutY="72.0" prefHeight="70.0" prefWidth="312.0" text="\$0" textFill="#5b9ae0">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Label>
+            <Line endX="106.80001831054688" layoutX="150.0" layoutY="181.0" startX="-100.0" stroke="#5b5050" />
+            <Label fx:id="label_term" alignment="CENTER" layoutX="56.0" layoutY="157.0" prefHeight="21.0" prefWidth="195.0" textFill="#949494">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="508.0" style="-fx-background-color: #1E2329;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.userVerify.UserVerify4Controller">
+   <children>
+      <Label graphicTextGap="6.0" layoutX="57.0" layoutY="43.0" prefHeight="32.0" prefWidth="395.0" text="Document Verification" textFill="#eaecef">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_close" layoutX="443.0" layoutY="10.0" mnemonicParsing="false" onAction="#close" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fx:id="imageViewClose" fitHeight="41.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/x-regular-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="58.0" layoutY="104.0" prefHeight="20.0" prefWidth="258.0" text="Document Issuing Country / Region" textFill="#eaecef">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input_country" editable="false" layoutX="59.0" layoutY="128.0" prefHeight="42.0" prefWidth="392.0" styleClass="cbb" stylesheets="@../application.css" />
+      <Button fx:id="button_continue" layoutX="264.0" layoutY="510.0" mnemonicParsing="false" onAction="#continue2" prefHeight="42.0" prefWidth="190.0" styleClass="button_select_verify" stylesheets="@../application.css" text="Continue">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="59.0" layoutY="192.0" prefHeight="20.0" prefWidth="257.0" text="Document Type" textFill="#eaecef">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="buttonRadius_driverLicense" alignment="CENTER_RIGHT" contentDisplay="RIGHT" graphicTextGap="19.0" layoutX="60.0" layoutY="305.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#license" prefHeight="64.0" prefWidth="394.0" styleClass="select_document" stylesheets="@../application.css" text="Driver's License">
+         <graphic>
+            <ImageView fx:id="imageView_card2" fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/credit-card-front-solid-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets left="14.0" right="19.0" />
+         </padding>
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="documentTypeToggleGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="buttonRadius_Passport" alignment="CENTER_RIGHT" contentDisplay="RIGHT" graphicTextGap="19.0" layoutX="60.0" layoutY="382.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#passport" prefHeight="64.0" prefWidth="394.0" styleClass="select_document" stylesheets="@../application.css" text="Passport" toggleGroup="$documentTypeToggleGroup">
+         <graphic>
+            <ImageView fx:id="imageView_card3" fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/credit-card-solid-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets left="14.0" right="19.0" />
+         </padding>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="buttonRadius_idcard" alignment="CENTER_RIGHT" contentDisplay="RIGHT" graphicTextGap="19.0" layoutX="60.0" layoutY="217.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#card" prefHeight="74.0" prefWidth="394.0" styleClass="select_document" stylesheets="@../application.css" text="ID Card" toggleGroup="$documentTypeToggleGroup" AnchorPane.rightAnchor="53.60000000000002">
+         <graphic>
+            <ImageView fx:id="imageView_card1" fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/id-card-solid-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets left="14.0" right="19.0" />
+         </padding>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <Label alignment="CENTER" layoutX="199.0" layoutY="243.0" prefHeight="21.0" prefWidth="94.0" style="-fx-background-color: #3C2601; -fx-background-radius: 3px;" text="Recommended" textFill="#fada89" />
+   </children>
+</AnchorPane>

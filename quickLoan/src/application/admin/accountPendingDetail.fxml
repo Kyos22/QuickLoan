@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneCenter" prefHeight="562.0" prefWidth="725.0" styleClass="div_detail_pending" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.admin.AccountPendingDetailController">
+   <children>
+      <Label layoutX="28.0" layoutY="28.0" text="Verifying User Detail" textFill="#616161">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="61.0" text="Confirm and pending for new Account User here." textFill="#898989">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="117.0" text="Username">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input_username" layoutX="28.0" layoutY="145.0" prefHeight="34.0" prefWidth="300.0" styleClass="border-box-detailPending" stylesheets="@../application.css" />
+      <Label layoutX="28.0" layoutY="198.0" text="Email">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input_email" layoutX="28.0" layoutY="226.0" prefHeight="34.0" prefWidth="300.0" styleClass="border-box-detailPending" stylesheets="@../application.css" />
+      <Label layoutX="371.0" layoutY="26.0" text="Full Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input_fullname" layoutX="371.0" layoutY="54.0" prefHeight="34.0" prefWidth="300.0" styleClass="border-box-detailPending" stylesheets="@../application.css" />
+      <Label layoutX="371.0" layoutY="117.0" text="ID Card">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input_idcard" layoutX="371.0" layoutY="145.0" prefHeight="34.0" prefWidth="300.0" styleClass="border-box-detailPending" stylesheets="@../application.css" />
+      <Label layoutX="28.0" layoutY="281.0" text="Date of Birth">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input_DateOfBirth" layoutX="28.0" layoutY="309.0" prefHeight="34.0" prefWidth="195.0" styleClass="border-box-detailPending" stylesheets="@../application.css" />
+      <Label layoutX="371.0" layoutY="195.0" text="Phone Number">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input_phoneNumber" layoutX="371.0" layoutY="223.0" prefHeight="34.0" prefWidth="300.0" styleClass="border-box-detailPending" stylesheets="@../application.css" />
+      <Label layoutX="291.0" layoutY="281.0" text="City">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputCity" layoutX="290.0" layoutY="309.0" prefHeight="34.0" prefWidth="145.0" styleClass="border-box-detailPending" stylesheets="@../application.css" />
+      <Label layoutX="488.0" layoutY="278.0" text="Address">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input_Address" layoutX="487.0" layoutY="306.0" prefHeight="34.0" prefWidth="202.0" styleClass="border-box-detailPending" stylesheets="@../application.css" />
+      <Label layoutX="29.0" layoutY="373.0" text="Country">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input_Country" layoutX="28.0" layoutY="401.0" prefHeight="34.0" prefWidth="145.0" styleClass="border-box-detailPending" stylesheets="@../application.css" />
+      <Label layoutX="217.0" layoutY="373.0" prefHeight="20.0" prefWidth="134.0" text="ID Card Before">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageView_IDBefore" fitHeight="150.0" fitWidth="232.0" layoutX="217.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="472.0" layoutY="373.0" prefHeight="20.0" prefWidth="134.0" text="ID Card After">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageView_IDAfter" fitHeight="150.0" fitWidth="232.0" layoutX="472.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="button_close" layoutX="671.0" layoutY="6.0" mnemonicParsing="false" onAction="#close" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/x-regular-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

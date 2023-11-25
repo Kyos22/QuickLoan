@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneVCB" prefHeight="322.0" prefWidth="383.0" styleClass="line_div" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.dashboard.TopUpVCBController">
+   <children>
+      <TextField fx:id="input_Amount" layoutX="30.0" layoutY="70.0" prefHeight="34.0" prefWidth="322.0" promptText="Amount" styleClass="inputusername_regester1" stylesheets="@../application.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Label layoutX="28.0" layoutY="27.0" text="Choose Amount" textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Slider fx:id="mySlider" blockIncrement="6000.0" layoutX="30.0" layoutY="135.0" majorTickUnit="6000.0" max="12000.0" prefHeight="37.0" prefWidth="322.0" showTickLabels="true" />
+      <Label layoutX="28.0" layoutY="187.0" text="Total payment">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="213.0" prefHeight="18.0" prefWidth="230.0" text="Total Payment Including administrative fees" wrapText="true" />
+      <HBox alignment="CENTER_LEFT" layoutX="261.0" layoutY="184.0" prefHeight="46.0" prefWidth="110.0">
+         <children>
+            <Label fx:id="myLabel">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="button_return" layoutX="29.0" layoutY="267.0" mnemonicParsing="false" onAction="#return1" prefHeight="34.0" prefWidth="154.0" styleClass="button_select_payment1" stylesheets="@../application.css" text="Delete All" />
+      <ImageView fx:id="imageView_logoVCB" fitHeight="46.0" fitWidth="174.0" layoutX="216.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/Screenshot_2023-11-07_082538-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="button_con" layoutX="206.0" layoutY="267.0" mnemonicParsing="false" onAction="#pay" prefHeight="34.0" prefWidth="154.0" styleClass="button_select_payment" stylesheets="@../application.css" text="Continue" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="508.0" style="-fx-background-color: #1E2329;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.userVerify.UserVerifyComplete">
+   <children>
+      <Button fx:id="button_close" layoutX="443.0" layoutY="10.0" mnemonicParsing="false" onAction="#close" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fx:id="imageViewClose" fitHeight="41.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/x-regular-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="imageViewComplete" fitHeight="150.0" fitWidth="200.0" layoutX="168.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/Screenshot_2023-11-05_221306-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="261.0" prefHeight="27.0" prefWidth="517.0" text="Document uploaded" textFill="#e4e4e4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="294.0" prefHeight="18.0" prefWidth="508.0" text="Click contine to proceed to the next step" textFill="#acacac">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_ccontinue" layoutX="55.0" layoutY="488.0" mnemonicParsing="false" onAction="#continue_nextstep" prefHeight="41.0" prefWidth="394.0" styleClass="button_select_verify" stylesheets="@../application.css" text="Continue">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

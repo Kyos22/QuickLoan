@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneCenter" prefHeight="435.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.dashboard.TopUpPage">
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="-1.0" prefHeight="435.0" prefWidth="899.0" styleClass="line_div" stylesheets="@../application.css">
+         <children>
+            <Line endX="634.199951171875" endY="-7.62939453125E-6" layoutX="259.0" layoutY="54.0" startX="-259.0" startY="-7.62939453125E-6" stroke="#dddddd" AnchorPane.leftAnchor="0.5" />
+            <Label layoutX="60.0" layoutY="14.0" text="Top Up Credits">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="paneChange" layoutX="1.0" layoutY="55.0" prefHeight="360.0" prefWidth="894.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

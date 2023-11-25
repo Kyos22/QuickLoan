@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneVCB1" prefHeight="322.0" prefWidth="383.0" styleClass="line_div" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.dashboard.TopUpCompleteController">
+   <children>
+      <ImageView fitHeight="146.0" fitWidth="160.0" layoutX="111.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/complete.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="70.0" layoutY="222.0" text="Top Up Successfully Done">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="163.0" layoutY="200.0" text="Hurrah!" textFill="#868686">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneCenter" prefHeight="562.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.admin.UserRequestLoanController">
+   <children>
+      <Label layoutX="282.0" layoutY="14.0" text="Request Loan" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <HBox layoutX="27.0" layoutY="55.0" prefHeight="53.0" prefWidth="674.0" style="-fx-background-color: #1D1D41;" styleClass="border-box" stylesheets="@../application.css">
+         <children>
+            <Label />
+            <Label prefHeight="52.0" prefWidth="133.0" text="Username" textFill="#d1d1d1">
+               <padding>
+                  <Insets left="11.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="52.0" prefWidth="122.0" text="Request Date" textFill="#d1d1d1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="52.0" prefWidth="88.0" text="Loan Type" textFill="#d1d1d1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="52.0" prefWidth="55.0" text="Term" textFill="#d1d1d1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="52.0" prefWidth="90.0" text="Amount" textFill="#d1d1d1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="52.0" prefWidth="66.0" text="Detal" textFill="#d1d1d1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="52.0" prefWidth="83.0" text="Action" textFill="#d1d1d1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="26.0" layoutY="109.0" prefHeight="436.0" prefWidth="674.0">
+         <children>
+            <ScrollPane layoutX="1.0" prefHeight="438.0" prefWidth="674.0">
+               <content>
+                  <VBox fx:id="layout1" prefHeight="436.0" prefWidth="674.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

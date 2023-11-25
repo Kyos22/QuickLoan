@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="44.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.paymentScheduled.RowScheduledBackgroundController">
+   <children>
+      <Label fx:id="label_date" prefHeight="44.0" prefWidth="162.0" text="22/10/2002">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label fx:id="label_original" prefHeight="44.0" prefWidth="193.0" text="\$1000.00">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="label_total" prefHeight="44.0" prefWidth="72.0" text="\$1000.00">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_status" prefHeight="44.0" prefWidth="71.0" text="open">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</HBox>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="paneCenter" prefHeight="435.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.requestLoanHome.RequestHistoryController">
+   <children>
+      <HBox layoutX="20.0" layoutY="14.0" prefHeight="47.0" prefWidth="291.0" spacing="8.0">
+         <children>
+            <Button fx:id="button_loanAccount" mnemonicParsing="false" onAction="#loanAccount" prefHeight="38.0" prefWidth="111.0" styleClass="button_RequestLoan" stylesheets="@../application.css" text="Loan Account" />
+            <Button fx:id="button_loanScheduled" mnemonicParsing="false" onAction="#loanScheduled" prefHeight="38.0" prefWidth="111.0" styleClass="button_RequestLoan" stylesheets="@../application.css" text="Loan Infomation" />
+         </children>
+      </HBox>
+      <AnchorPane fx:id="paneMain" layoutX="21.0" layoutY="66.0" prefHeight="368.0" prefWidth="902.0" />
+   </children>
+</AnchorPane>

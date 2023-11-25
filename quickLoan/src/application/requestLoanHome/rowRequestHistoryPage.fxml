@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="52.0" prefWidth="879.0" styleClass="underline_row" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.requestLoanHome.RowRequestHistoryController">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="226.0" spacing="7.0">
+         <children>
+            <ImageView fx:id="imageViewHouse" fitHeight="49.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/houseIcon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="label_type" prefHeight="50.0" prefWidth="70.0" text="House" textFill="#5b5b5b">
+               <padding>
+                  <Insets left="6.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="22.0" />
+         </padding>
+      </HBox>
+      <Label fx:id="status" prefHeight="50.0" prefWidth="167.0" text="Active" textFill="#5b5b5b">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="amount" prefHeight="50.0" prefWidth="164.0" text="\$1000.00" textFill="#5b5b5b">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="requestDate" prefHeight="50.0" prefWidth="162.0" text="22/10/2024" textFill="#5b5b5b">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_detail" mnemonicParsing="false" onAction="#details" prefHeight="101.0" prefWidth="120.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fx:id="imageView_detail" fitHeight="36.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/comment-detail-solid-108.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</HBox>

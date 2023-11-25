@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneMain" prefHeight="368.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.requestLoanHome.RequestHistory1Controller">
+   <children>
+      <HBox layoutY="18.0" prefHeight="38.0" prefWidth="900.0" styleClass="border-box" stylesheets="@../application.css">
+         <children>
+            <Label prefHeight="37.0" prefWidth="227.0" text="Loan Type" textFill="#5b5b5b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="25.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="37.0" prefWidth="164.0" text="Status" textFill="#5b5b5b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="37.0" prefWidth="168.0" text="amount" textFill="#5b5b5b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="37.0" prefWidth="196.0" text="Request Date" textFill="#5b5b5b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="37.0" prefWidth="130.0" text="Details" textFill="#5b5b5b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="19.0" prefWidth="901.0" style="-fx-background-color: linear-gradient(to right, #d38312, #a83279);;" styleClass="border_topleft_right" stylesheets="@../application.css" />
+      <AnchorPane layoutX="-1.0" layoutY="56.0" prefHeight="312.0" prefWidth="902.0">
+         <children>
+            <ScrollPane prefHeight="312.0" prefWidth="901.0">
+               <content>
+                  <VBox fx:id="layout" prefHeight="310.0" prefWidth="899.0" styleClass="border-box" stylesheets="@../application.css">
+                     <children>
+                        <HBox prefHeight="52.0" prefWidth="879.0" styleClass="underline_row" stylesheets="@../application.css">
+                           <children>
+                              <HBox prefHeight="50.0" prefWidth="226.0" spacing="7.0">
+                                 <children>
+                                    <ImageView fitHeight="49.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../Downloads/houseIcon.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="50.0" prefWidth="70.0" text="House" textFill="#5b5b5b">
+                                       <padding>
+                                          <Insets left="6.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="22.0" />
+                                 </padding>
+                              </HBox>
+                              <Label prefHeight="50.0" prefWidth="167.0" text="Active" textFill="#5b5b5b">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="50.0" prefWidth="164.0" text="\$1000.00" textFill="#5b5b5b">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="50.0" prefWidth="162.0" text="22/10/2024" textFill="#5b5b5b">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" prefHeight="101.0" prefWidth="120.0" style="-fx-background-color: transparent;">
+                                 <graphic>
+                                    <ImageView fitHeight="36.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../Downloads/comment-detail-solid-108.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children></VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
