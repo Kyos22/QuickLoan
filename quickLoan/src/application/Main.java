@@ -17,6 +17,7 @@ public class Main extends Application {
 			Parent root = FXMLLoader.load(getClass().getResource("/application/login_register/background.fxml"));
 			Scene scene = new Scene(root,700,487);
 			stage.setResizable(false);
+			System.out.println("HELLO");
 			
 //			Parent root = FXMLLoader.load(getClass().getResource("/application/admin/adminBackGround.fxml"));
 //			Scene scene = new Scene(root,944,641);
